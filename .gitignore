@@ -1,0 +1,118 @@
+# ==========================================
+# SmartHouse - Git Ignore Configuration
+# ==========================================
+
+# Maven build output
+target/
+*.war
+*.jar
+
+# Keep the Maven Wrapper JAR if required
+!.mvn/wrapper/maven-wrapper.jar
+
+
+# ==========================================
+# Uploaded property images/files
+# ==========================================
+
+uploads/
+
+
+# ==========================================
+# Maven
+# ==========================================
+
+.mvn/wrapper/maven-wrapper.jar
+
+
+# ==========================================
+# Eclipse / STS
+# ==========================================
+
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+
+
+# ==========================================
+# IntelliJ IDEA
+# ==========================================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+
+# ==========================================
+# NetBeans
+# ==========================================
+
+/nbproject/private/
+/nbproject/Makefile-*
+/nbproject/build-impl.xml
+/nbproject/genfiles.properties
+/nbproject/project.properties
+/nbproject/project.xml
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+# ==========================================
+# Visual Studio Code
+# ==========================================
+
+.vscode/
+
+
+# ==========================================
+# Build folders
+# ==========================================
+
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
+logs/
+
+
+# ==========================================
+# Operating system files
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ==========================================
+# Local configuration files
+# ==========================================
+
+application-local.properties
+application-secret.properties
+.env
+.env.*
+!.env.example
+
+
+# ==========================================
+# Temporary files
+# ==========================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
