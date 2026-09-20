@@ -28,12 +28,12 @@ public class AdminInitializer {
 
         return args -> {
 
-            Role adminRole = roleRepository.findByName("ADMIN")
-                    .orElseThrow(() ->
-                            new IllegalStateException(
-                                    "ADMIN role not found."
-                            )
-                    );
+           Role adminRole = roleRepository.findByName("ADMIN")
+        .orElseGet(() -> {
+            Role newRole = new Role();
+            newRole.setName("ADMIN");
+            return roleRepository.save(newRole);
+        });
 
             User adminUser = userRepository
                     .findByEmail(adminEmail)
